@@ -88,7 +88,7 @@ ul { padding: 0; list-style: none; }
 .brand strong { font-family: var(--brand-font); font-size: 1.55rem; font-weight: 600; line-height: 1; letter-spacing: .03em; }
 .brand small { font-size: .62rem; font-weight: 600; line-height: 1; letter-spacing: .08em; }
 .global-nav { display: flex; align-items: center; gap: clamp(14px, 1.8vw, 28px); }
-.global-nav a { position: relative; font-family: var(--sans); font-size: .7rem; font-weight: 600; text-decoration: none; letter-spacing: .04em; }
+.global-nav a { position: relative; font-size: .7rem; font-weight: 600; text-decoration: none; letter-spacing: .04em; }
 .global-nav a::after { position: absolute; right: 0; bottom: -6px; left: 0; height: 1px; background: currentColor; content: ""; transform: scaleX(0); transform-origin: right; transition: transform .25s ease; }
 .global-nav a:hover::after { transform: scaleX(1); transform-origin: left; }
 .menu-button { display: none; border: 0; background: transparent; color: currentColor; }
@@ -337,7 +337,8 @@ ul { padding: 0; list-style: none; }
 .career-photo figcaption span { font-family: var(--brand-font); font-size: .5rem; letter-spacing: .15em; }
 .career-stat { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 16px 18px; color: #fff; background: linear-gradient(90deg, rgba(16,36,61,.98), rgba(16,36,61,.88)); }
 .career-stat > span { display: inline-flex; align-items: center; padding: 6px 12px; background: var(--orange); border-radius: 999px; font-family: var(--brand-font); font-size: .6rem; font-weight: 600; letter-spacing: .08em; white-space: nowrap; }
-.career-stat > strong { font-family: var(--top-serif); font-size: clamp(1.08rem, 1.8vw, 1.38rem); line-height: 1.28; text-align: right; }
+.career-stat > strong { font-family: var(--top-serif); font-size: clamp(1.08rem, 1.8vw, 1.38rem); font-weight: 600; line-height: 1.38; text-align: right; }
+.service-career .service-kicker { color: rgba(207, 87, 66, .82); }
 
 .philosophy { color: #fff; background: linear-gradient(180deg, #10243d 0%, #0d1d31 100%); }
 .philosophy .section-label { color: rgba(255,255,255,.68); }
@@ -402,7 +403,7 @@ ul { padding: 0; list-style: none; }
     overflow-y: auto;
   }
   .global-nav.is-open { opacity: 1; pointer-events: auto; transform: none; }
-  .global-nav a { font-family: var(--sans); font-size: 1.6rem; }
+  .global-nav a { font-family: var(--top-serif); font-size: 1.6rem; }
   .site-header.is-menu-open { color: white; background: transparent; border-color: transparent; }
   .hero-photo { inset: 47% 0 0; clip-path: none; background-position: center; }
   .hero-shade { background: linear-gradient(180deg, var(--top-paper) 0%, var(--top-paper) 45%, rgba(243, 240, 232, .9) 53%, rgba(11, 27, 43, .05) 72%, rgba(11, 27, 43, .3) 100%); }
@@ -449,8 +450,9 @@ ul { padding: 0; list-style: none; }
   .service-body { padding: 28px 24px 30px; }
   .service-name { font-size: clamp(2rem, 9vw, 2.4rem); }
   .service-catch { font-size: 1.18rem; }
-  .career-stat { flex-direction: column; align-items: flex-start; }
-  .career-stat > strong { text-align: left; }
+  .career-stat { flex-direction: row; align-items: center; gap: 10px; padding: 13px 16px; }
+  .career-stat > span { padding: 6px 10px; font-size: .56rem; }
+  .career-stat > strong { font-size: 1.02rem; text-align: right; }
   .philosophy h2 { font-size: clamp(2.2rem, 10vw, 3.2rem); }
   .footer-inner { flex-direction: column; align-items: flex-start; }
 }
