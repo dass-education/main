@@ -145,7 +145,7 @@ ul { padding: 0; list-style: none; }
   color: var(--top-ink);
   font-family: var(--top-serif);
   font-size: clamp(3.6rem, 8vw, 8rem);
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.18;
   letter-spacing: -.065em;
 }
@@ -261,9 +261,9 @@ ul { padding: 0; list-style: none; }
   flex-direction: column;
   background: var(--surface);
   border: 1px solid var(--line);
-  border-radius: 0 0 34px 34px;
+  border-radius: 34px;
   box-shadow: var(--shadow-card);
-  overflow: visible;
+  overflow: hidden;
 }
 .service-media { position: relative; aspect-ratio: 5 / 4; overflow: hidden; background: var(--ink); border-radius: 34px 34px 0 0; }
 .service-media img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease; }
